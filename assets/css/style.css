@@ -1,99 +1,118 @@
 body{
+   text-align: center;
+  width: 100%;
+  height: 100vh; /*altura del color de fondo*/
     background-image: url("../img/fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
-h1
-{
-    text-align: center;
+.idioma{
+  width: 100px;
+  height: 50px;
+  margin-top: 4%;
 }
 
-.encabezado {
-    text-align: center;
-}
-.site-container{
-    width: 300px;
-    text-align: center;
-    margin: auto;
-    height: 400px;
-    border: 1px solid white;
-    background-image: url("../img/paisaje.jpg");
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 15px;
-    box-shadow: 3px 5px;
-
-
+/*icono de flecha*/
+.fa-angle-down {
+  color: #fff;
 }
 
-.container_two{
-padding-top: 20px;
-text-align: center;
+.form-control{
+  background:rgba(255, 255, 255, 0.3);
+  /*width: 280px;*/
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
-.enlinea
-{
-    display: inline-flex;
+
+.form-control::placeholder{
+  font-size: 35px;
 }
 
-.datos1{
-    width: 300px;
-    height: 200px;
-    border: 1px solid white;
-    background-image: url("../img/huevo1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px;
-    display: inline-block;
-    margin: 20px;
+#usuario{
+  margin-top: 15%;
+  height: 40%;
+  margin-bottom: 10%;
 }
 
-.datos2{
-    width: 300px;
-    height: 200px;
-    border: 1px solid white;
-    background-image: url("../img/huevo2.jpg");
-    background-size: cover;
-     background-repeat: no-repeat;
-     padding: 20px;
-    display: inline-block;
-    margin: 20px;
+#clave{
+  height: 70%;
+  margin-bottom: 10%;
 }
 
-.datos3{
-    width: 300px;
-    height: 200px;
-    border: 1px solid white;
-    background-image: url("../img/huevo3.jpg");
-    background-size: cover;
-     background-repeat: no-repeat;
-     margin: 20px;
-     padding: 20px;
+.imagen{
+  /*width: 440px;*/
+  width: 70%;
+  height:190px;
+  margin-top: 5%;
 }
 
-.img2-responsive{
-    height: 240px;
-    }
-
-.titulo{
-    font-size: 35px;
-    color: white;
-    text-transform: uppercase; 
-
+.btn-outline-light{
+  /*width: 280px;*/
+  width: 100%;
+  height: 115%;
+  color: white;
+  border-color: #fff;
+  font-size: 35px;
+  margin-top: 2%;
 }
 
-.titulo2 {
-    font-size: 17px;
-    text-decoration: underline;
+.informacion{
+  font-size: 29px;
+  color: white;
+  margin-top: 7%;
 }
 
-.texto{
-    font-size: 14px;
-    font-weight: bold;
-    display: block;
+hr{
+  width: 90%;
+  background-color: white;
 }
-#datos_pokemon {
-    text-align: center;
+
+.errores{
+  font-size: 20px;
+  color: white;
 }
+
+#mensaje_usuario{
+  display: none;
+}
+
+#mensaje_clave,#mensaje_clave2,#mensaje_clave3{
+  display: none;
+}
+
+#rowLine {
+  margin-top: 5%;
+}
+
+#line,#line2 {
+  color: #fff;
+}
+
+#pPostLine {
+  color: #fff;
+  font-size: 32px;
+}
+
+#rowFacebook {
+  margin-top: 3%;
+}
+
+#ultimo {
+  color: #fff;
+  font-size: 37px;
+}
+
+#footer {
+  border-top: 1px solid #fff;
+  margin-top: 40%;
+}
+
+#footerParagraph {
+  color: #fff;
+  font-size: 33px;
+  margin-top: 3%;
+}
+
