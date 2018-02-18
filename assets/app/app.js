@@ -16,7 +16,7 @@ $(function() {
     type: 'GET',
     url:'https://opentdb.com/api.php?amount=5&category=11&difficulty=medium&type=boolean',
     success: function(data) {
-     // addNews(data)
+     // movies(data)
       console.log('success',data)
 
     },
@@ -28,11 +28,11 @@ $(function() {
 
 
 
-/*function addNews(news){
+/*function movies(data){
   console.log(news);
-  const articles = news.response.docs;
- articles.forEach(function(article){
- const title = article.headline.main;
+  const movies_new = sucess.response_code.results;
+ movies.forEach(function(movies){
+ const categoria = ;
  const snippet = article.snippet;
   let $li = $('<li />').addClass('articleClass').text(title +'\n'+snippet);
 
