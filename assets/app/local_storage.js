@@ -1,4 +1,7 @@
 $( document ).ready(function(){
+
+
+
     
     $("#sesion").click(function() {
      //let usuario = $("#usuario").val();
@@ -7,7 +10,13 @@ $( document ).ready(function(){
      let pasword = $("#clave").val();
      if (name == datos.usuario && pasword == datos.clave){
         document.location.replace('trivia.html')
-     }else if(name == ""){
+     }else {
+         if (name != datos.usuario && pasword != datos.clave){
+       $("#mensaje_usuario_correcto").fadeIn();
+       return false;
+     }else{
+       $("#mensaje_usuario_correcto").fadeOut();
+       if(name == ""){
        $("#mensaje_usuario").fadeIn();
        return false;
      }else{
@@ -29,6 +38,8 @@ $( document ).ready(function(){
        }
       }
      }
+ }
+}
   })
 
 });
@@ -53,7 +64,7 @@ function obtener_localstorage(){
 function guardar_localstorage(){
     let persona = {
         usuario: "gabycasti",
-        clave: "45675693"
+        clave: "11223344"
     }
     //localStorage.setItem("nombre",nombre);
     localStorage.setItem("persona",JSON.stringify(persona));

@@ -1,7 +1,7 @@
 body{
    text-align: center;
   width: 100%;
-  height: 100vh; /*altura del color de fondo*/
+  height:1000px; /*altura del color de fondo*/
     background-image: url("../img/fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,11 +24,14 @@ body{
   /*width: 280px;*/
   margin-bottom: 2%;
   margin-top: 2%;
+  color:white !important;
+  font-size: 45px !important;
 }
 
 
 .form-control::placeholder{
   font-size: 35px;
+
 }
 
 #usuario{
@@ -44,7 +47,7 @@ body{
 
 .imagen{
   /*width: 440px;*/
-  width: 70%;
+  width: 60%;
   height:190px;
   margin-top: 5%;
 }
@@ -72,7 +75,7 @@ hr{
 }
 
 .errores{
-  font-size: 20px;
+  font-size: 40px;
   color: white;
 }
 
@@ -80,7 +83,7 @@ hr{
   display: none;
 }
 
-#mensaje_clave,#mensaje_clave2,#mensaje_clave3{
+#mensaje_clave,#mensaje_clave2,#mensaje_clave3,#mensaje_usuario_correcto{
   display: none;
 }
 
@@ -115,5 +118,79 @@ hr{
   color: #fff;
   font-size: 33px;
   margin-top: 3%;
+}
+
+.demo{
+color:white;
+font-size: 30px;
+text-shadow: 0.1em 0.1em #333;
+}
+
+.form-control{
+  font-size: 40px;
+  color:white;
+}
+
+.final{
+  padding-top: 200px;
+  color:black;
+  font-size: 60px;
+}
+
+
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea{
+  touch-action:none; 
+}
+
+/*  Media  */
+
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) { 
+
+.demo{
+font-size: 30px; 
+color:white;
+ }
+
+ #clave{
+  height: 50%;
+ }
+
+
+ body{
+  text-align: center;
+  width: 100%;
+  height:1800px; /*altura del color de fondo*/
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
+
+.demo{
+font-size: 30px; 
+color:white;
+text-shadow: 0.1em 0.1em #333;
+ }
+
+ #clave{
+  height: 50%;
+ }
+
+
+ body{
+  text-align: center;
+  width: 100%;
+  height:1800px; /*altura del color de fondo*/
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+
 }
 

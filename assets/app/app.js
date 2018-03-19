@@ -50,12 +50,14 @@ $('#btn_false').click(function(){
 })
 
 $('#sesion').click(function(){
-   if(cont <= 4){
+   if(cont < 4){
    $('#btn_true').prop('disabled',false);
    $('#btn_false').prop('disabled',false);
    cont++;
    $('#informacion').html('');
    question(cont);
+ }else  {
+  document.location.replace('final.html')
  }
 })
 
