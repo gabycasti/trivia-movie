@@ -1,9 +1,6 @@
 $( document ).ready(function(){
 
-$("#portafolio").click(function(){
-  document.location.replace("https://gabycasti.github.io/portafolio/");
-})
-
+guardar_localstorage();
 
     
     $("#sesion").click(function() {
@@ -48,12 +45,12 @@ $("#portafolio").click(function(){
 });
 
 
-guardar_localstorage();
+
 
 
 function obtener_localstorage(){
 
-    if(localStorage.getItem("nombre")){
+    if(localStorage.getItem("persona")){
     //let nombre = localStorage.getItem("nombre");
     let persona = JSON.parse(localStorage.getItem("persona"));
     return persona;
@@ -71,5 +68,6 @@ function guardar_localstorage(){
     }
     //localStorage.setItem("nombre",nombre);
     localStorage.setItem("persona",JSON.stringify(persona));
+    console.log("guardo");
 }
 
