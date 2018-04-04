@@ -1,6 +1,13 @@
 $( document ).ready(function(){
 
+
+
 guardar_localstorage();
+
+
+$("#portafolio").click(function(){
+  document.location.replace("https://gabycasti.github.io/portafolio/");
+})
 
     
     $("#sesion").click(function() {
